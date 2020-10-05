@@ -135,6 +135,6 @@ function syncToTheme(theme) {
 }
 
 $(document).ready(function(e) {areaSeries.setData(json);
-    syncToTheme('Light');
+    syncToTheme('Dark');
     });
 
