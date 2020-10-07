@@ -60,7 +60,7 @@ var chart = LightweightCharts.createChart(chartElement, {
 chart.applyOptions({
     timeScale: {
         rightOffset: 12,
-        barSpacing: 1,
+        barSpacing: 1.25,
         fixLeftEdge: true,
         lockVisibleTimeRangeOnResize: true,
         rightBarStaysOnScroll: true,

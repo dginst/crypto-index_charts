@@ -10,10 +10,13 @@ df = query_mongo(db, cll)
 
 df['Time'] = [int(x) for x in df['Time']]
 
-df = df.rename(columns={'Time': 'time', 'Index Value': 'value'})
+df = df.loc[df['Time'] > 1467331200]
 
-df = df.loc[df['time'] > 1467331200]
+df = df.rename(columns={'Date': 'time', 'Time' : 'timestamp', 'Index Value': 'value'})
+
+
 print(df)
+
 
 df = str(df.to_dict(orient="records"))
 
